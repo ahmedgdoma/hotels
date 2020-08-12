@@ -35,13 +35,13 @@ to start server run
 
 to overtime API
 
- API  `GET`  `http://127.0.0.1:8000/overtime/1??start_date=2020-07-25&end_date=2020-07-28`
+ API  `GET`  `http://127.0.0.1:8000/overtime/1?start_date=2020-07-25&end_date=2020-07-28`
 you can change dates starting two years ago till now
 and hotel id from hotels added to database
 
 to benchmark API
 
- API  `GET`  `http://127.0.0.1:8000/benchmark/1??start_date=2020-07-25&end_date=2020-07-28`
+ API  `GET`  `http://127.0.0.1:8000/benchmark/1?start_date=2020-07-25&end_date=2020-07-28`
 you can change dates starting two years ago till now
 and hotel id from hotels added to database
 
