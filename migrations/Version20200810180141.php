@@ -21,7 +21,7 @@ final class Version20200810180141 extends AbstractMigration
     {
         // this up() migration is auto-generated, please modify it to your needs
         $this->addSql('CREATE TABLE hotel (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(255) NOT NULL, PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
-        $this->addSql('CREATE TABLE review (id INT AUTO_INCREMENT NOT NULL, hotel_id INT NOT NULL, score INT NOT NULL, comment LONGTEXT NOT NULL, created_date DATETIME NOT NULL, INDEX IDX_794381C69C905093 (hotel_id_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
+        $this->addSql('CREATE TABLE review (id INT AUTO_INCREMENT NOT NULL, hotel_id INT NOT NULL, score INT NOT NULL, comment LONGTEXT NOT NULL, created_date DATETIME NOT NULL, INDEX IDX_794381C69C905093 (hotel_id), PRIMARY KEY(id)) DEFAULT CHARACTER SET utf8mb4 COLLATE `utf8mb4_unicode_ci` ENGINE = InnoDB');
         $this->addSql('ALTER TABLE review ADD CONSTRAINT FK_794381C69C905093 FOREIGN KEY (hotel_id) REFERENCES hotel (id)');
     }
 
