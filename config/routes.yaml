@@ -1,3 +1,9 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+overtime:
+    path: /overtime/{hotel_id}
+    methods: get
+    controller: App\Controller\ApiController::overtime
+
+benchMark:
+    path: /benchmark/{hotel_id}
+    methods: get
+    controller: App\Controller\ApiController::benchMark
