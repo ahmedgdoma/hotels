@@ -1,4 +1,4 @@
-# Movies API
+# Hotels API
 
 This project was generated with Symfony version 5.1.*
 
